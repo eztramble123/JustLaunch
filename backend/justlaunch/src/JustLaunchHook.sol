@@ -2,27 +2,26 @@
 pragma solidity 0.8.25;
 
 import {Token} from "./Token.sol";
-import {FixedPointMathLib} from "solmate/utils/FixedPointMathLib.sol";
-import {CurrencySettler} from "v4-core-test/utils/CurrencySettler.sol";
-import {IHooks} from "v4-core/interfaces/IHooks.sol";
-import {IPoolManager} from "v4-core/interfaces/IPoolManager.sol";
-import {FixedPoint96} from "lib/v4-core/libraries/FixedPoint96.sol";
-import {FullMath} from "v4-core/libraries/FullMath.sol";
-import {Hooks} from "v4-core/src/libraries/Hooks.sol";
-import {Position} from "v4-core/libraries/Position.sol";
-
-import {SafeCast} from "v4-core/libraries/SafeCast.sol";
-import {StateLibrary} from "v4-core/libraries/StateLibrary.sol";
-import {TickMath} from "v4-core/libraries/TickMath.sol";
-import {TransientStateLibrary} from "v4-core/libraries/TransientStateLibrary.sol";
-import {BalanceDelta, BalanceDeltaLibrary} from "v4-core/types/BalanceDelta.sol";
-import {BeforeSwapDelta, BeforeSwapDeltaLibrary, toBeforeSwapDelta} from "v4-core/types/BeforeSwapDelta.sol";
-import {Currency, CurrencyLibrary} from "v4-core/types/Currency.sol";
-import {PoolIdLibrary} from "v4-core/types/PoolId.sol";
-import {PoolKey} from "v4-core/types/PoolKey.sol";
-import {PoolKey} from "v4-core/types/PoolKey.sol";
-import {BaseHook} from "v4-periphery/BaseHook.sol";
-import {LiquidityAmounts} from "v4-periphery/libraries/LiquidityAmounts.sol";
+import {FixedPoint96} from "lib/v4-core/src/libraries/FixedPoint96.sol";
+import {FixedPointMathLib} from "lib/solmate/src/utils/FixedPointMathLib.sol";
+import {CurrencySettler} from "lib/v4-core/test/utils/CurrencySettler.sol";
+import {IHooks} from "lib/v4-core/src/interfaces/IHooks.sol";
+import {IPoolManager} from "lib/v4-core/src/interfaces/IPoolManager.sol";
+import {FullMath} from "lib/v4-core/src/libraries/FullMath.sol";
+import {Hooks} from "lib/v4-core/src/libraries/Hooks.sol";
+import {Position} from "lib/v4-core/src/libraries/Position.sol";
+import {SafeCast} from "lib/v4-core/src/libraries/SafeCast.sol";
+import {StateLibrary} from "lib/v4-core/src/libraries/StateLibrary.sol";
+import {TickMath} from "lib/v4-core/src/libraries/TickMath.sol";
+import {TransientStateLibrary} from "lib/v4-core/src/libraries/TransientStateLibrary.sol";
+import {BalanceDelta, BalanceDeltaLibrary} from "lib/v4-core/src/types/BalanceDelta.sol";
+import {BeforeSwapDelta, BeforeSwapDeltaLibrary, toBeforeSwapDelta} from "lib/v4-core/src/types/BeforeSwapDelta.sol";
+import {Currency, CurrencyLibrary} from "lib/v4-core/src/types/Currency.sol";
+import {PoolIdLibrary} from "lib/v4-core/src/types/PoolId.sol";
+import {PoolKey} from "lib/v4-core/src/types/PoolKey.sol";
+import {PoolKey} from "lib/v4-core/src/types/PoolKey.sol";
+import {BaseHook} from "lib/v4-periphery/src/base/hooks/BaseHook.sol";
+import {LiquidityAmounts} from "lib/v4-periphery/lib/v4-core/test/utils/LiquidityAmounts.sol";
 
 contract FairLaunchHook is BaseHook {
     using CurrencySettler for Currency;
