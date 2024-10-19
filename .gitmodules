@@ -10,3 +10,6 @@
 [submodule "backend/justlaunch/lib/solmate"]
 	path = backend/justlaunch/lib/solmate
 	url = https://github.com/transmissions11/solmate
+[submodule "lib/solmate"]
+	path = lib/solmate
+	url = https://github.com/transmissions11/solmate
