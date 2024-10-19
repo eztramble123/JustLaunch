@@ -3,7 +3,7 @@ pragma solidity 0.8.25;
 
 import {Token} from "./Token.sol";
 import {FixedPointMathLib} from "solmate/utils/FixedPointMathLib.sol";
-import {CurrencySettler} from "v4-core-test/utils/CurrencySettler.sol";
+import {DeltaResolver} from "v4-periphery/src/base/DeltaResolver.sol";
 import {IHooks} from "v4-core/interfaces/IHooks.sol";
 import {IPoolManager} from "v4-core/interfaces/IPoolManager.sol";
 import {FixedPoint96} from "v4-core/libraries/FixedPoint96.sol";
@@ -20,11 +20,11 @@ import {Currency, CurrencyLibrary} from "v4-core/types/Currency.sol";
 import {PoolIdLibrary} from "v4-core/types/PoolId.sol";
 import {PoolKey} from "v4-core/types/PoolKey.sol";
 import {PoolKey} from "v4-core/types/PoolKey.sol";
-import {BaseHook} from "v4-periphery/BaseHook.sol";
-import {LiquidityAmounts} from "v4-periphery/libraries/LiquidityAmounts.sol";
+import {BaseHook} from "v4-periphery/src/base/hooks/BaseHook.sol";
+import {LiquidityAmounts} from "v4-core/test/utils/LiquidityAmounts.sol";
 
 contract FairLaunchHook is BaseHook {
-    using CurrencySettler for Currency;
+    using DeltaResolver for Currency;
 
     error CantAddLiquidity();
     error FairLaunchFailed();
@@ -118,7 +118,7 @@ contract FairLaunchHook is BaseHook {
         });
         poolManager.modifyLiquidity(key, params, "");
 
-        CurrencySettler.settle(currency, poolManager, address(this), INITIAL_TOKEN_AMOUNT, false);
+        DeltaResolver.settle(currency, poolManager, address(this), INITIAL_TOKEN_AMOUNT, false);
 
         return "";
     }
