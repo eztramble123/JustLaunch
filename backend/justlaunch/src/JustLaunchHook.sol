@@ -6,10 +6,11 @@ import {FixedPointMathLib} from "solmate/utils/FixedPointMathLib.sol";
 import {CurrencySettler} from "v4-core-test/utils/CurrencySettler.sol";
 import {IHooks} from "v4-core/interfaces/IHooks.sol";
 import {IPoolManager} from "v4-core/interfaces/IPoolManager.sol";
-import {FixedPoint96} from "v4-core/libraries/FixedPoint96.sol";
+import {FixedPoint96} from "lib/v4-core/libraries/FixedPoint96.sol";
 import {FullMath} from "v4-core/libraries/FullMath.sol";
-import {Hooks} from "v4-core/libraries/Hooks.sol";
+import {Hooks} from "v4-core/src/libraries/Hooks.sol";
 import {Position} from "v4-core/libraries/Position.sol";
+
 import {SafeCast} from "v4-core/libraries/SafeCast.sol";
 import {StateLibrary} from "v4-core/libraries/StateLibrary.sol";
 import {TickMath} from "v4-core/libraries/TickMath.sol";
