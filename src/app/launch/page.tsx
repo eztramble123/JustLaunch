@@ -175,6 +175,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import unicornImage from "@/app/assets/unicorn.jpeg";
+
 export default function Home() {
   return (
     <main className="jsx-333846384 __variable_3a0388 __variable_a40e88 font-sans">
@@ -258,6 +260,13 @@ export default function Home() {
                 The Ultimate On-Chain Trading Experience
               </span>
             </h1>
+            <Image
+              src={unicornImage}
+              alt="Unicorn"
+              width={500}
+              height={300}
+              className="mt-6 w-full max-w-[500px]"
+            />
             <p className="text-sm mt-2 md:mt-3 md:max-w-[480px] text-black/80">
               Experience seamless and secure transactions directly on the
               blockchain with Trojan Trading Tools. Our decentralized,
