@@ -256,9 +256,8 @@ export default function Home() {
             />
             <p className="text-sm mt-2 md:mt-3 md:max-w-[480px] text-white">
               Experience seamless and secure transactions directly on the
-              blockchain with Trojan Trading Tools. Our decentralized,
-              user-centric, and precise solutions give you the ultimate edge in
-              trading.
+              blockchain with Uniswap. Our decentralized, user-centric, and
+              precise solutions give you the ultimate edge in trading.
             </p>
             <a
               href="https://t.me/solana_trojanbot"
@@ -298,7 +297,7 @@ export default function Home() {
             Statistics
           </p>
           <h2 className="mt-3 text-white/80 text-xl font-medium">
-            Unparalleled Performance. Unrivalled Results. Experience the Trojan
+            Unparalleled Performance. Unrivalled Results. Experience the Uniswap
             Difference.
           </h2>
           <div className="flex md:gap-6 mt-6 flex-col md:flex-row gap-4">
@@ -346,7 +345,7 @@ export default function Home() {
 
         <section className="w-full max-w-[936px] mx-auto lg:py-[130px] py-[60px] px-5 faded-scroll-text">
           <p className="text-5xl text-white">
-            <span>Trojan is your ultimate tool for trading on-chain.</span>
+            <span>Uniswap is your ultimate tool for trading on-chain.</span>
             <span>
               &nbsp;Trade like a pro and gain your edge over other traders.
             </span>
@@ -410,7 +409,7 @@ export default function Home() {
                   className="flex flex-1 items-center text-left justify-between py-6 text-white/80 font-medium transition-all [&[data-state=open]>div]:rotate-45 [&[data-state=open]]:text-white"
                   data-radix-collection-item=""
                 >
-                  Why are there multiple Trojan Telegram bots?
+                  Why are there multiple Uniswap Telegram bots?
                   <div className="flex-shrink-0">
                     <svg
                       width="24"
