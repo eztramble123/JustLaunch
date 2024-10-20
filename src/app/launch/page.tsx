@@ -258,7 +258,7 @@ export default function Home() {
                 The Ultimate On-Chain Trading Experience
               </span>
             </h1>
-            <p className="text-sm mt-2 md:mt-3 md:max-w-[480px] text-white/80">
+            <p className="text-sm mt-2 md:mt-3 md:max-w-[480px] text-black/80">
               Experience seamless and secure transactions directly on the
               blockchain with Trojan Trading Tools. Our decentralized,
               user-centric, and precise solutions give you the ultimate edge in
