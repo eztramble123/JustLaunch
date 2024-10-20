@@ -201,27 +201,11 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://docs.trojan.app"
+                  href="https://docs.uniswap.org/contracts/v4/overview"
                   className="text-sm font-medium leading-5 text-white" // Changed text color to white
                   target="_blank"
                 >
                   Learn
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-sm font-medium leading-5 text-white" // Changed text color to white
-                  href="/careers"
-                >
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a
-                  className="inline-flex items-center justify-center whitespace-nowrap label-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-0 ring-faded-100 disabled:pointer-events-none disabled:opacity-50 transition-all duration-200 hover:backdrop-brightness-150 focus-visible:backdrop-brightness-150 rounded-md text-sm leading-5 yellow-button-bg border border-[#68540D] text-[#FFC700] h-[28px] px-[10px]"
-                  href="/vip"
-                >
-                  VIP
                 </a>
               </li>
             </ul>
