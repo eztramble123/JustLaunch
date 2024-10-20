@@ -345,9 +345,12 @@ export default function Home() {
 
         <section className="w-full max-w-[936px] mx-auto lg:py-[130px] py-[60px] px-5 faded-scroll-text">
           <p className="text-5xl text-white">
-            <span>Uniswap is your ultimate tool for trading on-chain.</span>
             <span>
-              &nbsp;Trade like a pro and gain your edge over other traders.
+              JustLaunch is your ultimate tool for trading on Unichain.
+            </span>
+            <span>
+              &nbsp;Seamlessly integrate Telegram Bots with your trading
+              strategy.
             </span>
           </p>
         </section>
